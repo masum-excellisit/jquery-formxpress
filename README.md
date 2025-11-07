@@ -106,7 +106,7 @@ interface FormXpressOptions {
 }
 ```
 
-## Public Methods
+## Methods
 
 ```js
 const fm = $("#myForm").data("FormXpress");
@@ -114,53 +114,6 @@ fm.validate(); // returns boolean
 fm.reset(); // resets form + clears previews
 fm.clearErrors(); // removes error classes & spans
 ```
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-# Build (produces dist/form-xpress.min.js)
-npm run build
-```
-
-Distributed files:
-
-- `dist/form-xpress.js` (unminified with license header)
-- `dist/form-xpress.min.js` (minified for production)
-
-## Release & Publishing Workflow
-
-1. Ensure code & types updated in `src/` and `types/`.
-2. Update version in `package.json` following semantic versioning (MAJOR.MINOR.PATCH).
-3. Update `CHANGELOG.md` with new version section.
-4. Commit changes & push.
-5. Create a git tag: `git tag v1.0.1 && git push origin v1.0.1`.
-6. Create a GitHub Release from that tag (the GitHub Action will run and publish to npm automatically using `NPM_TOKEN`).
-7. Verify on npm: `https://www.npmjs.com/package/jquery-formxpress`.
-8. CDN links will reflect the new version (e.g. `jquery-formxpress@1.0.1`).
-
-### Manual Publish (Alternative)
-
-If you prefer direct publish:
-
-```bash
-npm login
-npm version patch   # or minor / major
-npm publish --access public
-```
-
-### Keep Types Correct
-
-If API changes (options or instance methods), also update `types/index.d.ts` and bump at least a MINOR version.
-
-## Contributing
-
-PRs welcome! Please:
-
-- Fork & create feature branch.
-- Add tests (if test suite added later).
-- Update docs & changelog.
 
 ## License
 
