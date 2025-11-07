@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "build": "mkdir -p dist && cp src/form-xpress.js dist/form-xpress.js && terser dist/form-xpress.js -o dist/form-xpress.min.js --compress --mangle --comments '/^!/'",
+    "build": "node init && mkdir -p dist && cp src/form-xpress.js dist/form-xpress.js && terser dist/form-xpress.js -o dist/form-xpress.min.js --compress --mangle --comments '/^!/'",
     "prepare": "npm run build",
     "test": "echo 'No tests configured'",
     "prepublishOnly": "npm test",
