@@ -53,5 +53,5 @@ PKG_NAME=$(node -p "require('./package.json').name")
 
 echo "\n✅ Release complete: ${PKG_NAME}@${NEW_VERSION}"
 echo "CDN links:"
-echo "  jsDelivr: https://cdn.jsdelivr.net/npm/${PKG_NAME}@${NEW_VERSION}/dist/form-master.min.js"
-echo "  unpkg:    https://unpkg.com/${PKG_NAME}@${NEW_VERSION}/dist/form-master.min.js"
+echo "  jsDelivr: https://cdn.jsdelivr.net/npm/${PKG_NAME}@${NEW_VERSION}/dist/form-xpress.min.js"
+echo "  unpkg:    https://unpkg.com/${PKG_NAME}@${NEW_VERSION}/dist/form-xpress.min.js"

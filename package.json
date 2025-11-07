@@ -21,7 +21,7 @@
     "url": "https://github.com/masum-excellisit/jquery-formxpress/issues"
   },
   "homepage": "https://github.com/masum-excellisit/jquery-formxpress#readme",
-  "main": "dist/form-master.js",
+  "main": "dist/form-xpress.js",
   "types": "types/index.d.ts",
   "files": [
     "dist",
@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "build": "mkdir -p dist && cp src/form-master.js dist/form-master.js && terser dist/form-master.js -o dist/form-master.min.js --compress --mangle --comments '/^!/'",
+    "build": "mkdir -p dist && cp src/form-xpress.js dist/form-xpress.js && terser dist/form-xpress.js -o dist/form-xpress.min.js --compress --mangle --comments '/^!/'",
     "prepare": "npm run build",
     "test": "echo 'No tests configured'",
     "prepublishOnly": "npm test",

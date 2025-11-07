@@ -32,7 +32,7 @@ npm install jquery
 
 ```html
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./node_modules/jquery-formxpress/dist/form-master.min.js"></script>
+<script src="./node_modules/jquery-formxpress/dist/form-xpress.min.js"></script>
 <script>
   $("#myForm").FormXpress({
     successMessage: "Sent!",
@@ -50,10 +50,10 @@ You can use jsDelivr or unpkg once published:
 
 ```html
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Latest version (replace 1.0.0 with desired or omit for latest) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-formxpress@1.0.0/dist/form-master.min.js"></script>
+<!-- Latest version (replace 1.0.5 with desired or omit for latest) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-formxpress@1.0.5/dist/form-xpress.min.js"></script>
 <!-- OR -->
-<script src="https://unpkg.com/jquery-formxpress@1.0.0/dist/form-master.min.js"></script>
+<script src="https://unpkg.com/jquery-formxpress@1.0.5/dist/form-xpress.min.js"></script>
 ```
 
 After publishing new versions, CDN caches may take a short time to refresh. Append `?v=1.0.1` for cache-busting if needed.
@@ -120,14 +120,14 @@ fm.clearErrors(); // removes error classes & spans
 ```bash
 # Install dependencies
 npm install
-# Build (produces dist/form-master.min.js)
+# Build (produces dist/form-xpress.min.js)
 npm run build
 ```
 
 Distributed files:
 
-- `dist/form-master.js` (unminified with license header)
-- `dist/form-master.min.js` (minified for production)
+- `dist/form-xpress.js` (unminified with license header)
+- `dist/form-xpress.min.js` (minified for production)
 
 ## Release & Publishing Workflow
 
