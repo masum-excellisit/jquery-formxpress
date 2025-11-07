@@ -50,10 +50,10 @@ You can use jsDelivr or unpkg once published:
 
 ```html
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Latest version (replace 1.0.5 with desired or omit for latest) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-formxpress@1.0.5/dist/form-xpress.min.js"></script>
+<!-- Latest version (replace 1.0.6 with desired or omit for latest) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-formxpress@1.0.6/dist/form-xpress.min.js"></script>
 <!-- OR -->
-<script src="https://unpkg.com/jquery-formxpress@1.0.5/dist/form-xpress.min.js"></script>
+<script src="https://unpkg.com/jquery-formxpress@1.0.6/dist/form-xpress.min.js"></script>
 ```
 
 After publishing new versions, CDN caches may take a short time to refresh. Append `?v=1.0.1` for cache-busting if needed.
