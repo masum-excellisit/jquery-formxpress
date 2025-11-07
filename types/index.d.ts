@@ -1,5 +1,5 @@
 // Type definitions for form-master 1.0.0
-// Project: https://github.com/USERNAME/form-master
+// Project: https://github.com/masum-excellisit/form-master
 // Definitions by: Masum
 
 /// <reference types="jquery" />

@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/USERNAME/form-master.git"
+    "url": "git+https://github.com/masum-excellisit/form-master.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/form-master/issues"
+    "url": "https://github.com/masum-excellisit/form-master/issues"
   },
-  "homepage": "https://github.com/USERNAME/form-master#readme",
+  "homepage": "https://github.com/masum-excellisit/form-master#readme",
   "main": "dist/form-master.js",
   "types": "types/index.d.ts",
   "files": [
@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "build": "terser src/form-master.js -o dist/form-master.min.js --compress --mangle",
+    "build": "mkdir -p dist && cp src/form-master.js dist/form-master.js && terser dist/form-master.js -o dist/form-master.min.js --compress --mangle --comments '/^!/'",
     "prepare": "npm run build",
     "prepublishOnly": "npm test || echo 'No tests'"
   },
