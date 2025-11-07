@@ -31,7 +31,8 @@
   "scripts": {
     "build": "mkdir -p dist && cp src/form-master.js dist/form-master.js && terser dist/form-master.js -o dist/form-master.min.js --compress --mangle --comments '/^!/'",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test || echo 'No tests'"
+    "prepublishOnly": "npm test || echo 'No tests'",
+    "release": "scripts/release.sh"
   },
   "peerDependencies": {
     "jquery": ">=3.0.0"
